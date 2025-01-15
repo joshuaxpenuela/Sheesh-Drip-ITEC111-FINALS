@@ -22,12 +22,6 @@ if(isset($message)){
                 <li><a href="home.php">home</a></li>
                 <li><a href="shop.php">shop</a></li>
                 <li><a href="orders.php">orders</a></li>
-                <li><a href="#">account ⇓</a>
-                    <ul>
-                        <li><a href="login.php">login</a></li>
-                        <li><a href="register.php">register</a></li>
-                    </ul>
-                </li>
                 <li><a href="#">sheesh ⇓</a>
                     <ul>
                         <li><a href="about.php">about</a></li>
