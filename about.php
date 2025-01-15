@@ -41,12 +41,12 @@ if(!isset($user_id)){
     <div class="flex">
 
         <div class="image">
-            <img src="images/about-img-1.png" alt="">
+            <img src="images/aboutImg1.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <p>Luxurious, Best Quality, and Aesthetic Outfit</p>
             <a href="shop.php" class="btn">shop now</a>
         </div>
 
@@ -56,12 +56,12 @@ if(!isset($user_id)){
 
         <div class="content">
             <h3>what we provide?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <p>You want to get notice by browskies and shawties from La Salle and Ateneo wearing rizz outfit, bruh? We got you cover!</p>
             <a href="contact.php" class="btn">contact us</a>
         </div>
 
         <div class="image">
-            <img src="images/about-img-2.jpg" alt="">
+            <img src="images/aboutImg2.jpg" alt="">
         </div>
 
     </div>
@@ -69,13 +69,13 @@ if(!isset($user_id)){
     <div class="flex">
 
         <div class="image">
-            <img src="images/about-img-3.jpg" alt="">
+            <img src="images/aboutImg3.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>who we are?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
-            <a href="#reviews" class="btn">clients reviews</a>
+            <p>People from Forbes Park and Dasmariñas Village</p>
+            <a href="#reviews" class="btn">Hit us up</a>
         </div>
 
     </div>

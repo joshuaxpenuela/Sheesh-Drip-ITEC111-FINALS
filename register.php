@@ -2,6 +2,29 @@
 
 @include 'config.php';
 
+// Function to encrypt password using Caesar cipher with key 13
+function caesarCipher($str, $shift = 13) {
+    $encrypted = '';
+    // Loop through each character in the string
+    for ($i = 0; $i < strlen($str); $i++) {
+        $char = $str[$i];
+        
+        // Handle uppercase letters
+        if (ctype_upper($char)) {
+            $encrypted .= chr((ord($char) + $shift - 65) % 26 + 65);
+        }
+        // Handle lowercase letters
+        elseif (ctype_lower($char)) {
+            $encrypted .= chr((ord($char) + $shift - 97) % 26 + 97);
+        }
+        // Keep numbers and special characters as is
+        else {
+            $encrypted .= $char;
+        }
+    }
+    return $encrypted;
+}
+
 if(isset($_POST['submit'])){
 
    $filter_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -9,9 +32,9 @@ if(isset($_POST['submit'])){
    $filter_email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
    $email = mysqli_real_escape_string($conn, $filter_email);
    $filter_pass = filter_var($_POST['pass'], FILTER_SANITIZE_STRING);
-   $pass = mysqli_real_escape_string($conn, md5($filter_pass));
+   $pass = mysqli_real_escape_string($conn, caesarCipher($filter_pass));
    $filter_cpass = filter_var($_POST['cpass'], FILTER_SANITIZE_STRING);
-   $cpass = mysqli_real_escape_string($conn, md5($filter_cpass));
+   $cpass = mysqli_real_escape_string($conn, caesarCipher($filter_cpass));
 
    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email'") or die('query failed');
 

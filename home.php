@@ -82,7 +82,7 @@ if(isset($_POST['add_to_cart'])){
 <section class="home"> 
 
    <div class="content">
-      <h3 style="color:black; font-family:time new roman; text-shadow: 2px 2pxrgb(125, 125, 125);" >BGC outfit ba, parehh?!</h3>
+      <h3 style="color:black; font-family:time new roman; text-shadow: 2px 2pxrgb(125, 125, 125);" >BGC outfit, bruhhh?!</h3>
       <p style="color:black">Dress up yourself so everyone will say <b> SHEEESH</b> to you!</p>
       <a href="about.php" class="btn">discover more</a>
    </div>
